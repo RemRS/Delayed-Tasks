@@ -73,7 +73,7 @@ public class DataTableDao {
             return new DataTable(guid, timestamp, Status.getByValue(status));
 
         } catch (SQLException e) {
-            LOG.log(Level.WARNING, "Unable to update entity in database\nMessage: " +
+            LOG.log(Level.WARNING, "Unable to select entity from database\nMessage: " +
                     ((e.getMessage() == null || e.getMessage().isEmpty()) ? e.toString() : e.getMessage()));
 
             return null;
