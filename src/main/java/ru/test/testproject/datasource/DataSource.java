@@ -20,7 +20,6 @@ public class DataSource {
         Properties properties = new Properties();
         try {
             properties.load(new FileReader(new File("../config/project.properties")));
-            System.out.println(properties);
         }
         catch (IOException e) {
             LOG.log(Level.SEVERE, "Properties loading error. Application can not be started\n" + e.toString());
